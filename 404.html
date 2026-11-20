@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Elham Dieline Creator</title>
+    <meta name="description" content="Design real parametric packaging dielines in your browser: constructions, dimensions, board, preflight checks, 3D, sheet layout and exact SVG, DXF and PDF export." />
+    <meta name="application-name" content="Elham Dieline Creator" />
+    <meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/Dieline/favicon.svg" />
+    <link rel="apple-touch-icon" href="/Dieline/favicon.svg" />
+    <link rel="manifest" href="/Dieline/site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Elham Dieline Creator" />
+    <meta property="og:title" content="Elham Dieline Creator" />
+    <meta property="og:description" content="Parametric packaging dielines — in your browser." />
+    <!-- Theme before first paint (no white flash in dark mode). No external fonts or scripts. -->
+    <script>
+      try {
+        var t = localStorage.getItem("elham.theme");
+        var d = t === "dark" || (t !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = d ? "dark" : "light";
+        document.documentElement.style.colorScheme = d ? "dark" : "light";
+      } catch (e) {}
+    </script>
+    <style>
+      html, body, #root { height: 100%; margin: 0; }
+      html[data-theme="dark"] body { background: #0f1115; color: #e9ebf0; }
+      .boot { min-height: 100%; display: grid; place-items: center; font: 500 15px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #5b6170; }
+      .boot img { width: 44px; height: 44px; display: block; margin: 0 auto 12px; }
+    </style>
+    <script type="module" crossorigin src="/Dieline/assets/index-CxMtsg_n.js"></script>
+    <link rel="stylesheet" crossorigin href="/Dieline/assets/index-CdRI7hM5.css">
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot"><div><img src="/Dieline/favicon.svg" alt="" />Elham Dieline Creator</div></div>
+    </div>
+    <noscript>
+      <p style="font-family:system-ui,sans-serif;max-width:640px;margin:24px auto;padding:0 24px">
+        Elham Dieline Creator runs entirely in your browser and needs JavaScript for the CAD workspace.
+      </p>
+    </noscript>
+  </body>
+</html>
